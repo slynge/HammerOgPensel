@@ -2,7 +2,7 @@
 
 namespace AuctionAPI.Services.Job;
 
-internal interface IJobService
+public interface IJobService
 {
     Task<JobDto> CreateJobAsync(JobDto jobDto);
     Task<IEnumerable<JobDto>> GetJobsAsync();

@@ -23,7 +23,7 @@ internal class JobMapper
             Description: jobDb.Description,
             Zip: jobDb.Zip,
             Category: jobDb.Category,
-            Status: jobDb.Status,
+            Open: jobDb.Open,
             Bids: BidMapper.ToDtos(jobDb.Bids)
         );
     }

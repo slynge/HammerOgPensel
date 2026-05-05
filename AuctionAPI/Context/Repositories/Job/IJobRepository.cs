@@ -2,7 +2,7 @@
 
 namespace AuctionAPI.Context.Repositories.Job;
 
-internal interface IJobRepository
+public interface IJobRepository
 {
     Task<JobDb> CreateJobAsync(JobDb jobDb);
     Task<IEnumerable<JobDb>> GetJobsAsync();

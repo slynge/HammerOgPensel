@@ -2,4 +2,4 @@
 
 namespace DTO.Job;
 
-public record JobDto(string? Id, string Description, string Zip, Category Category, Status? Status, IEnumerable<BidDto>? Bids);
+public record JobDto(string? Id, string Description, string Zip, Category Category, bool? Open, IEnumerable<BidDto>? Bids);

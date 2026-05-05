@@ -1,6 +1,6 @@
 ﻿namespace AuctionAPI.Context.Models;
 
-internal class BidDb
+public class BidDb
 {
     public Guid Id { get; set; }
     public decimal Price { get; set; }

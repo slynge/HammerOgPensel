@@ -3,19 +3,19 @@ using DTO.Job;
 
 namespace AuctionAPI.Context.Models;
 
-internal class JobDb
+public class JobDb
 {
     [Key]
     public Guid Id { get; set; }
     public string Description { get; set; }
     public string Zip { get; set; }
     public Category Category { get; set; }
-    public Status Status { get; set; }
+    public bool Open { get; set; }
     public IEnumerable<BidDb> Bids { get; set; }
 
     public JobDb()
     {
-        Status = Status.OPEN;
+        Open = true;
         Bids = [];
     }
 }

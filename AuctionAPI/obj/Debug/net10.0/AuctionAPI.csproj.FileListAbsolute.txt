@@ -69,3 +69,4 @@ C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.ge
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\ref\AuctionAPI.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\DTO.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\DTO.pdb
+C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.sourcelink.json

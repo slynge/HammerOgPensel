@@ -6,12 +6,19 @@ namespace AuctionAPI.Controllers;
 
 [ApiController]
 [Route("api/jobs")]
-internal class JobController : ControllerBase
+public class JobController : ControllerBase
 {
     private readonly IJobService _jobService;
     public JobController(IJobService jobService)
     {
         _jobService = jobService;
+    }
+    
+    [HttpPost]
+    public async Task<IActionResult> CreateJobAsync([FromBody] JobDto jobDto)
+    {
+        var createdJobDto = await _jobService.CreateJobAsync(jobDto);
+        return CreatedAtAction(nameof(GetJobByIdAsync), new { id = createdJobDto.Id}, createdJobDto);
     }
 
     [HttpGet]
@@ -36,14 +43,4 @@ internal class JobController : ControllerBase
             return NotFound(e.Message);
         }
     }
-    
-    [HttpPost]
-    public async Task<IActionResult> CreateJobAsync([FromBody] JobDto jobDto)
-    {
-        var createdJobDto = await _jobService.CreateJobAsync(jobDto);
-        return CreatedAtAction(nameof(GetJobByIdAsync), new { id = createdJobDto.Id}, createdJobDto);
-    }
-
-    
-    
 }
