@@ -1,0 +1,11 @@
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\bin\Debug\net10.0\DTO.deps.json
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\bin\Debug\net10.0\DTO.dll
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\bin\Debug\net10.0\DTO.pdb
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.AssemblyInfoInputs.cache
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.AssemblyInfo.cs
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.csproj.CoreCompileInputs.cache
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.dll
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\refint\DTO.dll
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.pdb
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\ref\DTO.dll
