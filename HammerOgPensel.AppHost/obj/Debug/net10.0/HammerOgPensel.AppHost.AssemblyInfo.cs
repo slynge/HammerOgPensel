@@ -23,7 +23,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HammerOgPensel.AppHost")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da98cff05dd74c49d209aaaeb75e8d62d5a9a75a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+825b65686f8e0b9fa7e9d71721f4ca61ca0dca81")]
 [assembly: System.Reflection.AssemblyProductAttribute("HammerOgPensel.AppHost")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HammerOgPensel.AppHost")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

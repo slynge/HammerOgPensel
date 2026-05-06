@@ -33,7 +33,18 @@ internal class JobRepository : IJobRepository
 
         return foundJobDb;
     }
+    
+    public async Task<bool> IsJobOpenAsync(Guid jGuid)
+    {
+        var foundJobDb = await _context.Jobs.FindAsync(jGuid);
+        if (foundJobDb is null)
+        {
+            throw new KeyNotFoundException($"Job with id '{jGuid}' was not found.");
+        }
 
+        return foundJobDb.Open;
+    }
+    
     public async Task SaveChangesAsync()
     {
         await _context.SaveChangesAsync();

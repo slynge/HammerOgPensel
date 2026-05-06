@@ -12,7 +12,7 @@ public class JobDb
     public string Zip { get; set; }
     public Category Category { get; set; }
     public bool Open { get; set; }
-    public IEnumerable<BidDb> Bids { get; set; }
+    public List<BidDb> Bids { get; set; }
 
     public JobDb()
     {
