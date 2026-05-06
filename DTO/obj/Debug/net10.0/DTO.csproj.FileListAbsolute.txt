@@ -9,3 +9,4 @@ C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.dll
 C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\refint\DTO.dll
 C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.pdb
 C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\ref\DTO.dll
+C:\Users\slyng\Desktop\HammerOgPensel\DTO\obj\Debug\net10.0\DTO.sourcelink.json

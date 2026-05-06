@@ -2,12 +2,16 @@
 
 namespace AuctionAPI.Context.Models;
 
-internal class OutboxMessageDb
+public class OutboxMessageDb
 {
     [Key]
-    public int Id { get; set; }
-
+    public Guid Id { get; set; }
+    public string EventType { get; set; }
+    public bool IsProcessed { get; set; }
+    public string Payload { get; set; }
+    
     public OutboxMessageDb()
     {
+        IsProcessed = false;
     }
 }

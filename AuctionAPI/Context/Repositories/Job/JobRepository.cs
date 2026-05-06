@@ -15,7 +15,6 @@ internal class JobRepository : IJobRepository
     public async Task<JobDb> CreateJobAsync(JobDb jobDb)
     {
         await _context.Jobs.AddAsync(jobDb);
-        await _context.SaveChangesAsync();
         return jobDb;
     } 
 
@@ -33,5 +32,10 @@ internal class JobRepository : IJobRepository
         }
 
         return foundJobDb;
+    }
+
+    public async Task SaveChangesAsync()
+    {
+        await _context.SaveChangesAsync();
     }
 }

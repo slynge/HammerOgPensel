@@ -1,6 +1,10 @@
 using AuctionAPI.Context;
+using AuctionAPI.Context.Repositories.Bid;
 using AuctionAPI.Context.Repositories.Job;
+using AuctionAPI.Context.Repositories.Outbox;
+using AuctionAPI.Services.Bid;
 using AuctionAPI.Services.Job;
+using AuctionAPI.Services.Outbox;
 
 namespace AuctionAPI;
 
@@ -15,10 +19,12 @@ internal class Program
         builder.AddRabbitMQClient("messaging");
         builder.AddNpgsqlDbContext<AuctionContext>("AuctionDb");
         builder.Services.AddScoped<IJobService, JobService>();
-        
+        builder.Services.AddScoped<IBidService, BidService>();
+        builder.Services.AddHostedService<OutboxService>();
         
         builder.Services.AddScoped<IJobRepository, JobRepository>();
-
+        builder.Services.AddScoped<IBidRepository, BidRepository>();
+        builder.Services.AddScoped<IOutboxRepository, OutboxRepository>();
         
         builder.Services.AddAuthorization();
         builder.Services.AddControllers(options =>

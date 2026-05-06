@@ -19,6 +19,7 @@ internal class BidMapper
     public static BidDto ToDto(BidDb bidDb)
     {
         return new BidDto(
+            Id: bidDb.Id.ToString(),
             Price: bidDb.Price,
             Name: bidDb.Name, 
             Email: bidDb.Email,

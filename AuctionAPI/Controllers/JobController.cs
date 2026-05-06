@@ -28,7 +28,7 @@ public class JobController : ControllerBase
     }
     
     [HttpGet("{id}")]
-    public async Task<IActionResult> GetJobByIdAsync(string id)
+    public async Task<IActionResult> GetJobByIdAsync([FromRoute] string id)
     {
         try
         {

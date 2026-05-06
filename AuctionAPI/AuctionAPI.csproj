@@ -19,8 +19,4 @@
       <ProjectReference Include="..\HammerOgPensel.ServiceDefaults\HammerOgPensel.ServiceDefaults.csproj" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="Context\Repositories\Bid\" />
-    </ItemGroup>
-
 </Project>

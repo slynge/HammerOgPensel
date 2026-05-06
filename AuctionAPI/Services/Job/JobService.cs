@@ -1,5 +1,8 @@
-﻿using AuctionAPI.Context.Mappers;
+﻿using System.Text.Json;
+using AuctionAPI.Context.Mappers;
+using AuctionAPI.Context.Models;
 using AuctionAPI.Context.Repositories.Job;
+using AuctionAPI.Context.Repositories.Outbox;
 using DTO.Job;
 
 namespace AuctionAPI.Services.Job;
@@ -7,13 +10,14 @@ namespace AuctionAPI.Services.Job;
 internal class JobService : IJobService
 {
     private readonly IJobRepository _jobRepository;
-    public JobService(IJobRepository jobRepository)
+    public JobService(IJobRepository jobRepository, IOutboxRepository outboxRepository)
     {
         _jobRepository = jobRepository;
     }
     public async Task<JobDto> CreateJobAsync(JobDto jobDto)
     {
         var createdJobDb = await _jobRepository.CreateJobAsync(JobMapper.ToEntity(jobDto));
+        await _jobRepository.SaveChangesAsync();
         return JobMapper.ToDto(createdJobDb);
     }
     

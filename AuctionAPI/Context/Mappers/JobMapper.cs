@@ -11,6 +11,7 @@ internal class JobMapper
         {
             Id = Guid.NewGuid(),
             Description = jobDto.Description,
+            Email = jobDto.Email,
             Zip = jobDto.Zip,
             Category = jobDto.Category
         };
@@ -21,6 +22,7 @@ internal class JobMapper
         return new JobDto(
             Id: jobDb.Id.ToString(),
             Description: jobDb.Description,
+            Email: jobDb.Email,
             Zip: jobDb.Zip,
             Category: jobDb.Category,
             Open: jobDb.Open,
