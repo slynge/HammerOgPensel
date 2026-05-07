@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HammerOgPensel.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+15f542b5bf56faed16021ce002d111cca3769b88")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28c6f4f43e72e90eef5a2097b631cae99ceb42ef")]
 [assembly: System.Reflection.AssemblyProductAttribute("HammerOgPensel.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HammerOgPensel.ServiceDefaults")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
