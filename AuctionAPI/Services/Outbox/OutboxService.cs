@@ -1,9 +1,6 @@
 ﻿using System.Text;
-using System.Text.Json;
-using AuctionAPI.Context.Repositories.Job;
+using AuctionAPI.Context.Models;
 using AuctionAPI.Context.Repositories.Outbox;
-using DTO.Job;
-using Microsoft.OpenApi;
 using RabbitMQ.Client;
 
 namespace AuctionAPI.Services.Outbox;
@@ -12,7 +9,6 @@ internal class OutboxService : BackgroundService
 {
     private readonly IServiceScopeFactory _scopeFactory;
     private readonly IConnection _connection;
-    private readonly IChannel _channel;
     public OutboxService(IServiceScopeFactory scopeFactory, IConnection connection)
     {
         _scopeFactory = scopeFactory;
@@ -21,7 +17,7 @@ internal class OutboxService : BackgroundService
 
     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
     {
-        await using var _channel = await _connection.CreateChannelAsync(cancellationToken: stoppingToken);
+        await using var channel = await _connection.CreateChannelAsync(cancellationToken: stoppingToken);
         while (!stoppingToken.IsCancellationRequested)
         {
             using var scope = _scopeFactory.CreateScope();
@@ -30,11 +26,17 @@ internal class OutboxService : BackgroundService
             var nonProcessedOutboxMessages = await outboxRepository.GetNonProcessedOutboxMessagesAsync();
             foreach (var nonProcessedOutboxMessage in nonProcessedOutboxMessages)
             {
+                var routingKey = DetermineRoutingKey(nonProcessedOutboxMessage.EventType);
+                await channel.QueueDeclareAsync(
+                    queue: routingKey,
+                    durable: true,
+                    exclusive: false, 
+                    cancellationToken: stoppingToken);
                 var body = Encoding.UTF8.GetBytes(nonProcessedOutboxMessage.Payload);
-
-                await _channel.BasicPublishAsync(
+                
+                await channel.BasicPublishAsync(
                     exchange: string.Empty,
-                    routingKey: "",
+                    routingKey: routingKey,
                     mandatory: false,
                     body: body, 
                     cancellationToken: stoppingToken);
@@ -43,5 +45,14 @@ internal class OutboxService : BackgroundService
             }
             await Task.Delay(TimeSpan.FromSeconds(5), stoppingToken);
         }
+    }
+
+    private string DetermineRoutingKey(EventType eventType)
+    {
+        return eventType switch
+        {
+            EventType.AuctionClosed => "auction.closed",
+            _ => ""
+        };
     }
 }

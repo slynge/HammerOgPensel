@@ -13,13 +13,20 @@
         "packagesPath": "C:\\Users\\slyng\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\slyng\\Desktop\\HammerOgPensel\\HammerOgPensel.AppHost\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\slyng\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\slyng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -66,14 +73,6 @@
             "Aspire.Hosting.RabbitMQ": {
               "target": "Package",
               "version": "[13.2.4, )"
-            },
-            "Aspire.RabbitMQ.Client": {
-              "target": "Package",
-              "version": "[13.2.4, )"
-            },
-            "RabbitMQ.Client": {
-              "target": "Package",
-              "version": "[7.2.1, )"
             }
           },
           "imports": [
@@ -92,7 +91,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\slyng\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.107/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

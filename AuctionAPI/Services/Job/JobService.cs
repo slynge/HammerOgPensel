@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-using AuctionAPI.Context.Mappers;
-using AuctionAPI.Context.Models;
+﻿using AuctionAPI.Context.Mappers;
 using AuctionAPI.Context.Repositories.Job;
 using AuctionAPI.Context.Repositories.Outbox;
 using DTO.Job;
@@ -38,6 +36,20 @@ internal class JobService : IJobService
         }
 
         var foundJobDb = await _jobRepository.GetJobByIdAsync(jGuid);
+        return JobMapper.ToDto(foundJobDb);
+    }
+    
+    public async Task<JobDto> GetJobByIdWithBidsAsync(string id)
+    {
+        if(!Guid.TryParse(id, out var jGuid))
+        {
+            throw new ArgumentException(
+                $"'{id}' is not a valid GUID for jobId.", 
+                nameof(id)
+            );
+        }
+
+        var foundJobDb = await _jobRepository.GetJobByIdWithBidsAsync(jGuid);
         return JobMapper.ToDto(foundJobDb);
     }
 }

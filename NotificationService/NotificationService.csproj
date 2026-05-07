@@ -1,10 +1,20 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.Worker">
 
     <PropertyGroup>
-        <OutputType>Exe</OutputType>
         <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UserSecretsId>dotnet-NotificationService-d48847ef-aaf0-45ed-bb3f-8b78fc548f93</UserSecretsId>
     </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Aspire.RabbitMQ.Client" Version="13.2.4" />
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.7"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DTO\DTO.csproj" />
+      <ProjectReference Include="..\HammerOgPensel.ServiceDefaults\HammerOgPensel.ServiceDefaults.csproj" />
+    </ItemGroup>
 
 </Project>

@@ -1,13 +1,15 @@
-﻿namespace NotificationService;
+namespace NotificationService;
 
-class Program
+public class Program
 {
-    static void Main(string[] args)
+    public static async Task Main(string[] args)
     {
-        while (true)
-        {
-            
-        }
-        Console.WriteLine("Hello, World!");
+        var builder = Host.CreateApplicationBuilder();
+        builder.AddServiceDefaults();
+        builder.AddRabbitMQClient("messaging");
+        builder.Services.AddHostedService<NotificationWorker>();
+
+        var host = builder.Build();
+        await host.RunAsync();
     }
 }

@@ -6,6 +6,7 @@ C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\n
 C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\HammerOgPensel.ServiceDefaults.AssemblyInfoInputs.cache
 C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\HammerOgPensel.ServiceDefaults.AssemblyInfo.cs
 C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\HammerOgPensel.ServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\HammerOgPensel.ServiceDefaults.sourcelink.json
 C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\HammerOgPensel.ServiceDefaults.dll
 C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\refint\HammerOgPensel.ServiceDefaults.dll
 C:\Users\slyng\Desktop\HammerOgPensel\HammerOgPensel.ServiceDefaults\obj\Debug\net10.0\HammerOgPensel.ServiceDefaults.pdb
