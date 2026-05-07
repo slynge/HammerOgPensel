@@ -9,7 +9,6 @@ C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\AuctionAPI.pd
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Aspire.Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Aspire.RabbitMQ.Client.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\HealthChecks.Rabbitmq.dll
-C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.EntityFrameworkCore.Relational.dll
@@ -25,7 +24,6 @@ C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.Ext
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.Extensions.ServiceDiscovery.Abstractions.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.Extensions.Telemetry.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.Extensions.Telemetry.Abstractions.dll
-C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Microsoft.OpenApi.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Npgsql.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Npgsql.DependencyInjection.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
@@ -42,7 +40,9 @@ C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Polly.Core.dl
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Polly.Extensions.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\Polly.RateLimiting.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\RabbitMQ.Client.dll
+C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\DTO.dll
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\HammerOgPensel.ServiceDefaults.dll
+C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\DTO.pdb
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\HammerOgPensel.ServiceDefaults.pdb
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.csproj.AssemblyReference.cache
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\rpswa.dswa.cache.json
@@ -50,8 +50,8 @@ C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.Ge
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.AssemblyInfoInputs.cache
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.AssemblyInfo.cs
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.csproj.CoreCompileInputs.cache
-C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.sourcelink.json
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\rjimswa.dswa.cache.json
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
@@ -67,6 +67,3 @@ C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\refint\Auctio
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.pdb
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.genruntimeconfig.cache
 C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\ref\AuctionAPI.dll
-C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\DTO.dll
-C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\bin\Debug\net10.0\DTO.pdb
-C:\Users\slyng\Desktop\HammerOgPensel\AuctionAPI\obj\Debug\net10.0\AuctionAPI.sourcelink.json

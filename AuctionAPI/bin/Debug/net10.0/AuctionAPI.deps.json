@@ -12,7 +12,6 @@
           "Aspire.RabbitMQ.Client": "13.2.4",
           "DTO": "1.0.0",
           "HammerOgPensel.ServiceDefaults": "1.0.0",
-          "Microsoft.AspNetCore.OpenApi": "10.0.7",
           "Microsoft.EntityFrameworkCore": "10.0.7",
           "Npgsql.EntityFrameworkCore.PostgreSQL": "10.0.1"
         },
@@ -58,17 +57,6 @@
           "lib/net8.0/HealthChecks.Rabbitmq.dll": {
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "9.0.0.0"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.OpenApi/10.0.7": {
-        "dependencies": {
-          "Microsoft.OpenApi": "2.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "10.0.7.0",
-            "fileVersion": "10.0.726.21808"
           }
         }
       },
@@ -222,14 +210,6 @@
           "lib/net10.0/Microsoft.Extensions.Telemetry.Abstractions.dll": {
             "assemblyVersion": "10.2.0.0",
             "fileVersion": "10.200.26.6302"
-          }
-        }
-      },
-      "Microsoft.OpenApi/2.0.0": {
-        "runtime": {
-          "lib/net8.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
           }
         }
       },
@@ -454,13 +434,6 @@
       "path": "aspnetcore.healthchecks.rabbitmq/9.0.0",
       "hashPath": "aspnetcore.healthchecks.rabbitmq.9.0.0.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.OpenApi/10.0.7": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vKiAcGXG0BwNVw3bOjjWRLnp9tR18dR7MiwpvC94h0yFS+zfnzGHzS/JmmgwUdRixrGxrlIMRAWrVc+2DfAGlg==",
-      "path": "microsoft.aspnetcore.openapi/10.0.7",
-      "hashPath": "microsoft.aspnetcore.openapi.10.0.7.nupkg.sha512"
-    },
     "Microsoft.EntityFrameworkCore/10.0.7": {
       "type": "package",
       "serviceable": true,
@@ -565,13 +538,6 @@
       "sha512": "sha512-6V4V6NX6RLUYWwV89DeW/4zK5xOycYHWhsfMXSpKVGgMHfXcczmbk6hBeqTnRPzhpATYcOWlmA6hk1jgdxUugA==",
       "path": "microsoft.extensions.telemetry.abstractions/10.2.0",
       "hashPath": "microsoft.extensions.telemetry.abstractions.10.2.0.nupkg.sha512"
-    },
-    "Microsoft.OpenApi/2.0.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
-      "path": "microsoft.openapi/2.0.0",
-      "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
     },
     "Npgsql/10.0.2": {
       "type": "package",

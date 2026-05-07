@@ -239,37 +239,6 @@
           }
         }
       },
-      "Aspire.RabbitMQ.Client/13.2.4": {
-        "type": "package",
-        "dependencies": {
-          "AspNetCore.HealthChecks.Rabbitmq": "9.0.0",
-          "Microsoft.Extensions.Configuration.Abstractions": "10.0.5",
-          "Microsoft.Extensions.Configuration.Binder": "10.0.5",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
-          "Microsoft.Extensions.DependencyInjection.AutoActivation": "10.2.0",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "10.0.5",
-          "Microsoft.Extensions.Hosting.Abstractions": "10.0.5",
-          "Microsoft.Extensions.Logging.Abstractions": "10.0.5",
-          "Microsoft.Extensions.Options": "10.0.5",
-          "Microsoft.Extensions.Primitives": "10.0.5",
-          "OpenTelemetry.Extensions.Hosting": "1.15.3",
-          "Polly.Core": "8.6.5",
-          "RabbitMQ.Client": "7.2.0"
-        },
-        "compile": {
-          "lib/net10.0/Aspire.RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Aspire.RabbitMQ.Client.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net10.0/Aspire.RabbitMQ.Client.targets": {}
-        }
-      },
       "AspNetCore.HealthChecks.NpgSql/9.0.0": {
         "type": "package",
         "dependencies": {
@@ -802,25 +771,6 @@
         },
         "runtime": {
           "lib/net10.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net8.0/_._": {}
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.AutoActivation/10.2.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Hosting.Abstractions": "10.0.2"
-        },
-        "compile": {
-          "lib/net10.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll": {
             "related": ".xml"
           }
         },
@@ -1464,71 +1414,6 @@
           }
         }
       },
-      "OpenTelemetry/1.15.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Diagnostics.Abstractions": "10.0.0",
-          "Microsoft.Extensions.Logging.Configuration": "10.0.0",
-          "OpenTelemetry.Api.ProviderBuilderExtensions": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Api/1.15.3": {
-        "type": "package",
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Api.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Api.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Api.ProviderBuilderExtensions/1.15.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.0",
-          "OpenTelemetry.Api": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
-      "OpenTelemetry.Extensions.Hosting/1.15.3": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Hosting.Abstractions": "10.0.0",
-          "OpenTelemetry": "1.15.3"
-        },
-        "compile": {
-          "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        },
-        "runtime": {
-          "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll": {
-            "related": ".dll.sigstore.json;.xml"
-          }
-        }
-      },
       "Polly.Core/8.6.5": {
         "type": "package",
         "compile": {
@@ -1542,7 +1427,7 @@
           }
         }
       },
-      "RabbitMQ.Client/7.2.1": {
+      "RabbitMQ.Client/7.2.0": {
         "type": "package",
         "dependencies": {
           "System.Threading.RateLimiting": "8.0.0"
@@ -1981,30 +1866,6 @@
         "aspire.hosting.rabbitmq.nuspec",
         "lib/net8.0/Aspire.Hosting.RabbitMQ.dll",
         "lib/net8.0/Aspire.Hosting.RabbitMQ.xml"
-      ]
-    },
-    "Aspire.RabbitMQ.Client/13.2.4": {
-      "sha512": "LOeOCSoAY3S9vafOpJtNUUK27tBdtgTpJQo/FwbbXUc7Xf1y9kqQRrwEaNb90xvGk9loSjNx7GpHyuiD0ayUMQ==",
-      "type": "package",
-      "path": "aspire.rabbitmq.client/13.2.4",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ConfigurationSchema.json",
-        "Icon.png",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "aspire.rabbitmq.client.13.2.4.nupkg.sha512",
-        "aspire.rabbitmq.client.nuspec",
-        "buildTransitive/net10.0/Aspire.RabbitMQ.Client.targets",
-        "buildTransitive/net8.0/Aspire.RabbitMQ.Client.targets",
-        "buildTransitive/net9.0/Aspire.RabbitMQ.Client.targets",
-        "lib/net10.0/Aspire.RabbitMQ.Client.dll",
-        "lib/net10.0/Aspire.RabbitMQ.Client.xml",
-        "lib/net8.0/Aspire.RabbitMQ.Client.dll",
-        "lib/net8.0/Aspire.RabbitMQ.Client.xml",
-        "lib/net9.0/Aspire.RabbitMQ.Client.dll",
-        "lib/net9.0/Aspire.RabbitMQ.Client.xml"
       ]
     },
     "AspNetCore.HealthChecks.NpgSql/9.0.0": {
@@ -2804,31 +2665,6 @@
         "microsoft.extensions.dependencyinjection.abstractions.10.0.5.nupkg.sha512",
         "microsoft.extensions.dependencyinjection.abstractions.nuspec",
         "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection.AutoActivation/10.2.0": {
-      "sha512": "Z/OI261l7LnxyODKPx0trQyIHFyicCR/akfn64lGOjPcf4FpAZ7ePAGl2HPvQBUBSNfPTF0gWeCfuFmyftMgYA==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.autoactivation/10.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "README.md",
-        "buildTransitive/net462/Microsoft.Extensions.DependencyInjection.AutoActivation.targets",
-        "buildTransitive/net8.0/_._",
-        "lib/net10.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
-        "lib/net10.0/Microsoft.Extensions.DependencyInjection.AutoActivation.xml",
-        "lib/net462/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
-        "lib/net462/Microsoft.Extensions.DependencyInjection.AutoActivation.xml",
-        "lib/net8.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
-        "lib/net8.0/Microsoft.Extensions.DependencyInjection.AutoActivation.xml",
-        "lib/net9.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
-        "lib/net9.0/Microsoft.Extensions.DependencyInjection.AutoActivation.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.AutoActivation.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.AutoActivation.xml",
-        "microsoft.extensions.dependencyinjection.autoactivation.10.2.0.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.autoactivation.nuspec"
       ]
     },
     "Microsoft.Extensions.Diagnostics/10.0.5": {
@@ -3717,129 +3553,6 @@
         "postgresql.png"
       ]
     },
-    "OpenTelemetry/1.15.3": {
-      "sha512": "N0i6WjPoHPbZyms1ugbDIFAJFuGlpeExJMU/+XSL0lQRUkg/D0utFkDoLXf8Z1km5B+xVZ2GyMXXiX8qdeNmPg==",
-      "type": "package",
-      "path": "opentelemetry/1.15.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net10.0/OpenTelemetry.dll",
-        "lib/net10.0/OpenTelemetry.dll.sigstore.json",
-        "lib/net10.0/OpenTelemetry.xml",
-        "lib/net462/OpenTelemetry.dll",
-        "lib/net462/OpenTelemetry.dll.sigstore.json",
-        "lib/net462/OpenTelemetry.xml",
-        "lib/net8.0/OpenTelemetry.dll",
-        "lib/net8.0/OpenTelemetry.dll.sigstore.json",
-        "lib/net8.0/OpenTelemetry.xml",
-        "lib/net9.0/OpenTelemetry.dll",
-        "lib/net9.0/OpenTelemetry.dll.sigstore.json",
-        "lib/net9.0/OpenTelemetry.xml",
-        "lib/netstandard2.0/OpenTelemetry.dll",
-        "lib/netstandard2.0/OpenTelemetry.dll.sigstore.json",
-        "lib/netstandard2.0/OpenTelemetry.xml",
-        "lib/netstandard2.1/OpenTelemetry.dll",
-        "lib/netstandard2.1/OpenTelemetry.dll.sigstore.json",
-        "lib/netstandard2.1/OpenTelemetry.xml",
-        "opentelemetry-icon-color.png",
-        "opentelemetry.1.15.3.nupkg.sha512",
-        "opentelemetry.nuspec"
-      ]
-    },
-    "OpenTelemetry.Api/1.15.3": {
-      "sha512": "fX+fkCysfPut+qCcT3bKqyX4QN9Saf4CgX8HLOHywEVD+Xr7sULtfuypITpoDysjx8R59dn/3mWhgimMH8cm/g==",
-      "type": "package",
-      "path": "opentelemetry.api/1.15.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net10.0/OpenTelemetry.Api.dll",
-        "lib/net10.0/OpenTelemetry.Api.dll.sigstore.json",
-        "lib/net10.0/OpenTelemetry.Api.xml",
-        "lib/net462/OpenTelemetry.Api.dll",
-        "lib/net462/OpenTelemetry.Api.dll.sigstore.json",
-        "lib/net462/OpenTelemetry.Api.xml",
-        "lib/net8.0/OpenTelemetry.Api.dll",
-        "lib/net8.0/OpenTelemetry.Api.dll.sigstore.json",
-        "lib/net8.0/OpenTelemetry.Api.xml",
-        "lib/net9.0/OpenTelemetry.Api.dll",
-        "lib/net9.0/OpenTelemetry.Api.dll.sigstore.json",
-        "lib/net9.0/OpenTelemetry.Api.xml",
-        "lib/netstandard2.0/OpenTelemetry.Api.dll",
-        "lib/netstandard2.0/OpenTelemetry.Api.dll.sigstore.json",
-        "lib/netstandard2.0/OpenTelemetry.Api.xml",
-        "opentelemetry-icon-color.png",
-        "opentelemetry.api.1.15.3.nupkg.sha512",
-        "opentelemetry.api.nuspec"
-      ]
-    },
-    "OpenTelemetry.Api.ProviderBuilderExtensions/1.15.3": {
-      "sha512": "SYn0lqYDwLMWhv/zlNGsQcl2yX++yTumanX46bmOZE/ZDOd1WjPBO2kZaZgKLEZTZk48pavIFGJ6vOvxXgWVFQ==",
-      "type": "package",
-      "path": "opentelemetry.api.providerbuilderextensions/1.15.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll",
-        "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
-        "lib/net10.0/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
-        "lib/net462/OpenTelemetry.Api.ProviderBuilderExtensions.dll",
-        "lib/net462/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
-        "lib/net462/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
-        "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll",
-        "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
-        "lib/net8.0/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
-        "lib/net9.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll",
-        "lib/net9.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
-        "lib/net9.0/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
-        "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll",
-        "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.dll.sigstore.json",
-        "lib/netstandard2.0/OpenTelemetry.Api.ProviderBuilderExtensions.xml",
-        "opentelemetry-icon-color.png",
-        "opentelemetry.api.providerbuilderextensions.1.15.3.nupkg.sha512",
-        "opentelemetry.api.providerbuilderextensions.nuspec"
-      ]
-    },
-    "OpenTelemetry.Extensions.Hosting/1.15.3": {
-      "sha512": "u8n/W8yIlqv0BXZmvId1iVaeWXG42tGKdTkuLYg5g57Y/r9CeUNzqtrSHNdG5IoO8iPX79w3v+WsbAHgUQbfeg==",
-      "type": "package",
-      "path": "opentelemetry.extensions.hosting/1.15.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll",
-        "lib/net10.0/OpenTelemetry.Extensions.Hosting.dll.sigstore.json",
-        "lib/net10.0/OpenTelemetry.Extensions.Hosting.xml",
-        "lib/net462/OpenTelemetry.Extensions.Hosting.dll",
-        "lib/net462/OpenTelemetry.Extensions.Hosting.dll.sigstore.json",
-        "lib/net462/OpenTelemetry.Extensions.Hosting.xml",
-        "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll",
-        "lib/net8.0/OpenTelemetry.Extensions.Hosting.dll.sigstore.json",
-        "lib/net8.0/OpenTelemetry.Extensions.Hosting.xml",
-        "lib/net9.0/OpenTelemetry.Extensions.Hosting.dll",
-        "lib/net9.0/OpenTelemetry.Extensions.Hosting.dll.sigstore.json",
-        "lib/net9.0/OpenTelemetry.Extensions.Hosting.xml",
-        "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.dll",
-        "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.dll.sigstore.json",
-        "lib/netstandard2.0/OpenTelemetry.Extensions.Hosting.xml",
-        "opentelemetry-icon-color.png",
-        "opentelemetry.extensions.hosting.1.15.3.nupkg.sha512",
-        "opentelemetry.extensions.hosting.nuspec"
-      ]
-    },
     "Polly.Core/8.6.5": {
       "sha512": "t+sUVrIwvo7UmsgHGgOG9F0GDZSRIm47u2ylH17Gvcv1q5hNEwgD5GoBlFyc0kh/pebmPyrAgvGsR/65ZBaXlg==",
       "type": "package",
@@ -3869,10 +3582,10 @@
         "polly.core.nuspec"
       ]
     },
-    "RabbitMQ.Client/7.2.1": {
-      "sha512": "YKXEfg9fVQiTKgZlvIhAfPSFaamEgi8DsQmisCH0IAsU4FYLrtoguDrDj6JtJVGUt40QPnBLRH6fTQcAC4qsOg==",
+    "RabbitMQ.Client/7.2.0": {
+      "sha512": "PPQ7cF7lwbhqC4up6en1bTUZlz06YqQwJecOJzsguTtyhNA7oL5uNDZIx/h6ZfcyPZV4V3DYKSCxfm4RUFLcbA==",
       "type": "package",
-      "path": "rabbitmq.client/7.2.1",
+      "path": "rabbitmq.client/7.2.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -3882,7 +3595,7 @@
         "lib/net8.0/RabbitMQ.Client.xml",
         "lib/netstandard2.0/RabbitMQ.Client.dll",
         "lib/netstandard2.0/RabbitMQ.Client.xml",
-        "rabbitmq.client.7.2.1.nupkg.sha512",
+        "rabbitmq.client.7.2.0.nupkg.sha512",
         "rabbitmq.client.nuspec"
       ]
     },
@@ -4091,13 +3804,12 @@
       "Aspire.Hosting.AppHost >= 13.2.4",
       "Aspire.Hosting.Orchestration.win-x64 >= 13.2.4",
       "Aspire.Hosting.PostgreSQL >= 13.2.4",
-      "Aspire.Hosting.RabbitMQ >= 13.2.4",
-      "Aspire.RabbitMQ.Client >= 13.2.4",
-      "RabbitMQ.Client >= 7.2.1"
+      "Aspire.Hosting.RabbitMQ >= 13.2.4"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\slyng\\.nuget\\packages\\": {}
+    "C:\\Users\\slyng\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
@@ -4108,13 +3820,20 @@
       "packagesPath": "C:\\Users\\slyng\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\slyng\\Desktop\\HammerOgPensel\\HammerOgPensel.AppHost\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\slyng\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\slyng\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net10.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4133,7 +3852,7 @@
         "auditLevel": "low",
         "auditMode": "all"
       },
-      "SdkAnalysisLevel": "10.0.200"
+      "SdkAnalysisLevel": "10.0.100"
     },
     "frameworks": {
       "net10.0": {
@@ -4161,14 +3880,6 @@
           "Aspire.Hosting.RabbitMQ": {
             "target": "Package",
             "version": "[13.2.4, )"
-          },
-          "Aspire.RabbitMQ.Client": {
-            "target": "Package",
-            "version": "[13.2.4, )"
-          },
-          "RabbitMQ.Client": {
-            "target": "Package",
-            "version": "[7.2.1, )"
           }
         },
         "imports": [
@@ -4187,7 +3898,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\slyng\\.dotnet\\sdk\\10.0.203/PortableRuntimeIdentifierGraph.json",
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.107/PortableRuntimeIdentifierGraph.json",
         "packagesToPrune": {
           "Microsoft.CSharp": "(,4.7.32767]",
           "Microsoft.VisualBasic": "(,10.4.32767]",

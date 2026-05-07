@@ -2,13 +2,13 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO", "DTO\DTO.csproj", "{5239C035-0DF2-4066-9BB0-4EC8C13716F0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{3EBBA826-1183-435E-AC8F-BAE5FABA3837}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuctionAPI", "AuctionAPI\AuctionAPI.csproj", "{0256A360-4F78-416B-A0D4-9FFBEA5EF120}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammerOgPensel.AppHost", "HammerOgPensel.AppHost\HammerOgPensel.AppHost.csproj", "{70FC36B4-4B14-4F4E-83B4-747370169174}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HammerOgPensel.ServiceDefaults", "HammerOgPensel.ServiceDefaults\HammerOgPensel.ServiceDefaults.csproj", "{6DB8E208-039F-4382-8363-20567A0E4B82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NotificationService", "NotificationService\NotificationService.csproj", "{5CC1F736-59B3-4FE6-B1EB-703D111AF7D6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,10 +20,6 @@ Global
 		{5239C035-0DF2-4066-9BB0-4EC8C13716F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5239C035-0DF2-4066-9BB0-4EC8C13716F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5239C035-0DF2-4066-9BB0-4EC8C13716F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3EBBA826-1183-435E-AC8F-BAE5FABA3837}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3EBBA826-1183-435E-AC8F-BAE5FABA3837}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3EBBA826-1183-435E-AC8F-BAE5FABA3837}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3EBBA826-1183-435E-AC8F-BAE5FABA3837}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0256A360-4F78-416B-A0D4-9FFBEA5EF120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0256A360-4F78-416B-A0D4-9FFBEA5EF120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0256A360-4F78-416B-A0D4-9FFBEA5EF120}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,5 +32,9 @@ Global
 		{6DB8E208-039F-4382-8363-20567A0E4B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DB8E208-039F-4382-8363-20567A0E4B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DB8E208-039F-4382-8363-20567A0E4B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CC1F736-59B3-4FE6-B1EB-703D111AF7D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CC1F736-59B3-4FE6-B1EB-703D111AF7D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CC1F736-59B3-4FE6-B1EB-703D111AF7D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CC1F736-59B3-4FE6-B1EB-703D111AF7D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

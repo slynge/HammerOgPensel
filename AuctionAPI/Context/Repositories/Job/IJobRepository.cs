@@ -7,6 +7,6 @@ public interface IJobRepository
     Task<JobDb> CreateJobAsync(JobDb jobDb);
     Task<IEnumerable<JobDb>> GetJobsAsync();
     Task<JobDb> GetJobByIdAsync(Guid jGuid);
-    Task<bool> IsJobOpenAsync(Guid jGuid);
+    Task<JobDb> GetJobByIdWithBidsAsync(Guid jGuid);
     Task SaveChangesAsync();
 }

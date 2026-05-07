@@ -1,6 +1,9 @@
-﻿using AuctionAPI.Context.Mappers;
+﻿using System.Text.Json;
+using AuctionAPI.Context.Mappers;
+using AuctionAPI.Context.Models;
 using AuctionAPI.Context.Repositories.Bid;
 using AuctionAPI.Context.Repositories.Job;
+using AuctionAPI.Context.Repositories.Outbox;
 using AuctionAPI.Services.Exceptions;
 using DTO.Bid;
 
@@ -10,19 +13,17 @@ internal class BidService : IBidService
 {
     private readonly IBidRepository _bidRepository;
     private readonly IJobRepository _jobRepository;
-    public BidService(IBidRepository bidRepository, IJobRepository jobRepository)
+    private readonly IOutboxRepository _outboxRepository;
+
+    public BidService(IBidRepository bidRepository, IJobRepository jobRepository, IOutboxRepository outboxRepository)
     {
         _bidRepository = bidRepository;
         _jobRepository = jobRepository;
+        _outboxRepository = outboxRepository;
     }
 
     public async Task<BidDto> CreateBidAsync(BidDto bidDto)
     {
-        if (!await IsJobOpenAsync(bidDto.JobId))
-        {
-            throw new JobClosedException(bidDto.JobId);
-        }
-        
         if (bidDto.Price < 0)
         {
             throw new ArgumentException(
@@ -30,23 +31,37 @@ internal class BidService : IBidService
                 nameof(bidDto.Price)
             );
         }
-        var createdBidDb = await _bidRepository.CreateBidAsync(BidMapper.ToEntity(bidDto));
-        await _bidRepository.SaveChangesAsync();
-        return BidMapper.ToDto(createdBidDb);
-    }
-
-    private async Task<bool> IsJobOpenAsync(string jobId)
-    {
-        if(!Guid.TryParse(jobId, out var jGuid))
+        
+        if(!Guid.TryParse(bidDto.JobId, out var jGuid))
         {
             throw new ArgumentException(
-                $"'{jobId}' is not a valid GUID for jobId.", 
-                nameof(jobId)
+                $"'{bidDto.JobId}' is not a valid GUID for jobId.", 
+                nameof(bidDto.JobId)
             );
         }
 
-        return await _jobRepository.IsJobOpenAsync(jGuid);
+        var jobDb = await _jobRepository.GetJobByIdWithBidsAsync(jGuid);
+        
+        if (!jobDb.Open)
+        {
+            throw new JobClosedException(bidDto.JobId);
+        }
+        var createdBidDb = await _bidRepository.CreateBidAsync(BidMapper.ToEntity(bidDto));
+
+        if (jobDb.Bids.Count == 3)
+        {
+            jobDb.Open = false;
+            await _outboxRepository.CreateOutboxMessageAsync(new OutboxMessageDb
+            {
+                EventType = EventType.AuctionClosed,
+                Payload = JsonSerializer.Serialize(JobMapper.ToDto(jobDb))
+            });
+        }
+        
+        await _bidRepository.SaveChangesAsync();
+        return BidMapper.ToDto(createdBidDb);
     }
+    
 
     public async Task<IEnumerable<BidDto>> GetBidsAsync()
     {
